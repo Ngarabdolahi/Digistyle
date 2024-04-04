@@ -956,7 +956,7 @@
         }
 
 
-        .offers .allof {
+        .offers .container .allof {
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
@@ -965,7 +965,12 @@
             gap: 16px;
         }
 
-        .offers .allof .posts {
+        .offers .container  {
+            width: 100%;
+            height: 400px;
+        }
+
+        .offers  .container .allof .posts {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -975,11 +980,11 @@
             height: 400px;
         }
 
-        .offers .allof .posts img {
+        .offers .container  .allof .posts img {
             width: 90%;
         }
 
-        .offers .allof .posts p {
+        .offers .container  .allof  .posts p {
             font-family: vazir;
             font-weight: 200;
         }
@@ -1973,19 +1978,24 @@
                 overflow: auto;
             }
 
-            .offers .allof {
+            .offers .container {
+                overflow-x: auto;
+                overflow-y: hidden;
+            }
+
+            .offers  .container .allof {
                 display: flex;
                 flex-direction: row;
                 align-items: flex-start;
                 justify-content: flex-start;
-                width: 2400px;
+                width: 750px;
                 gap: 16px;
             }
 
-            .offers .allof .posts {
+            .offers  .container .allof .posts {
                 width: 150px;
                 height: 390px;
-                background-color: aqua;
+                /* background-color: aqua; */
             }
 
             .offers #title {
@@ -2067,7 +2077,7 @@
                 font-size: x-small;
             }
 
-            .ctgss button{
+            .ctgss button {
                 font-size: xx-small;
                 align-items: flex-start;
             }
@@ -2500,26 +2510,28 @@
             <h2>25% تخفیف ویژه</h2>
             <img src="assets/img/homepage_1_sale.png" width="200px">
         </div>
-        <div class="allof">
-            <div class="posts">
-                <img src="assets/img/product_image_3-280x280.jpg" width="240px">
-                <p>هدست مدل تسکو</p>
-            </div>
-            <div class="posts">
-                <img src="assets/img/product_image_4-280x280.jpg" width="240px">
-                <p>ساعت هوشمند گاکاسی</p>
-            </div>
-            <div class="posts">
-                <img src="assets/img/product_image_8-210x210.jpg" width="240px">
-                <p>هدست رنگ مشکی</p>
-            </div>
-            <div class="posts">
-                <img src="assets/img/product_image_9-280x280.jpg" width="240px">
-                <p>اسپیکر قابل حمل تسکو</p>
-            </div>
-            <div class="posts">
-                <img src="assets/img/product_image_2-280x280.jpg" width="240px">
-                <p>لپ‌ تاپ ایسوس 15 اینچ</p>
+        <div class="container">
+            <div class="allof">
+                <div class="posts">
+                    <img src="assets/img/product_image_3-280x280.jpg" width="240px">
+                    <p>هدست مدل تسکو</p>
+                </div>
+                <div class="posts">
+                    <img src="assets/img/product_image_4-280x280.jpg" width="240px">
+                    <p>ساعت هوشمند گاکاسی</p>
+                </div>
+                <div class="posts">
+                    <img src="assets/img/product_image_8-210x210.jpg" width="240px">
+                    <p>هدست رنگ مشکی</p>
+                </div>
+                <div class="posts">
+                    <img src="assets/img/product_image_9-280x280.jpg" width="240px">
+                    <p>اسپیکر قابل حمل تسکو</p>
+                </div>
+                <div class="posts">
+                    <img src="assets/img/product_image_2-280x280.jpg" width="240px">
+                    <p>لپ‌ تاپ ایسوس 15 اینچ</p>
+                </div>
             </div>
         </div>
     </div>
@@ -2638,14 +2650,14 @@
     </div>
     <div class="ctgss">
         <div class="pstss1">
-                <h2>هدفون بی سیم اپل<br>مدل Airpod Pro 2</h2>
-                <p>همراه با محفظه شارژر بی سیم</p>
-                <button>خرید محصول</button>
+            <h2>هدفون بی سیم اپل<br>مدل Airpod Pro 2</h2>
+            <p>همراه با محفظه شارژر بی سیم</p>
+            <button>خرید محصول</button>
         </div>
         <div class="pstss2">
-                <h2>گوشی موبایل شیائومی<br>مدل Redmi note12 4G</h2>
-                <p>ظرفیت 256 گیگابایت رم 8 گیگابایت</p>
-                <button>خرید محصول</button>
+            <h2>گوشی موبایل شیائومی<br>مدل Redmi note12 4G</h2>
+            <p>ظرفیت 256 گیگابایت رم 8 گیگابایت</p>
+            <button>خرید محصول</button>
         </div>
     </div>
     <div class="allones">
