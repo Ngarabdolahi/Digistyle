@@ -484,7 +484,88 @@
         }
         .allprdctg .prdctg .products{
             display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: start;
+            width: 70%;
+            padding: 0;
+            margin: 0;
+        }
+        .allprdctg .products .titr{
+            display: flex;
             flex-direction: row;
+            font-family: vazir;
+            font-size: 400;
+            width: 100%;
+            padding: 0;
+            border-radius: 0px;
+            border-bottom: solid rgba(100, 100, 100, 0.120);
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 45px    ;
+        }
+        .allprdctg .products .titr h3{
+
+            margin: 0;
+        }
+        .allprdctg .serch{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 0;
+            border-bottom: solid rgba(128, 128, 128, 0.133);
+            width: 100%;
+        }
+        .allprdctg .serch .srch1{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-family: vazir;
+            font-weight: 300;
+            width: 50%;
+            gap:5px;
+        }
+        .allprdctg .serch .srch1 p{
+            font-family: vazir;
+            font-weight: 500;
+            font-size: medium;
+            color: gray;
+            margin-right: 5px;
+        }
+        .allprdctg .serch .srch2{
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            align-items: flex-end;
+            justify-content: flex-end;
+            gap:15px;
+            margin-top: 8px;
+        }
+        .allprdctg .serch .srch2 .sl1{
+            padding: 5px;
+            margin: 0;
+            border:gray 2px solid;
+            border-radius: 5px;
+            font-family: vazir;
+            font-size: medium;
+            font-weight: 200;
+        }
+        .allprdctg .serch .srch2 .sl2{
+            padding: 5px;
+            border:gray 2px solid;
+            border-radius: 5px;
+            font-family: vazir;
+            font-size: medium;
+            font-weight: 200;
+        }
+        .allprds{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            max-width: 1500px;
 
         }
     </style>
@@ -603,22 +684,21 @@
             <div class="prdctg">
                 <div class="products">
                     <div class="titr">
-                        <h4>فروشگاه</h4>
+                        <h3>فروشگاه</h3>
                     </div>
                     <div class="serch">
                         <div class="srch1">
-                            <i class='bx bx-objects-horizontal-left bx-sm'></i>
-                            <i class='bx bx-category bx-sm'></i>
-                            <p>نمایش 1-20 از 30 نتیجه</p>
+                            <i class='bx bx-objects-horizontal-left bx-md'></i>  <i class='bx bx-category bx-md'></i> <p>نمایش 1-20 از 30 نتیجه</p>
+                            
                         </div>
                         <div class="srch2">
                             <select name="orderby" class="sl1">
-                                <option value="op1" selected="selected">مرتب سازی بر اساس پیش‌غرض</option>
-                                <option value="op1">مرتب سازی بر اساس محبوبیت</option>
-                                <option value="op1">مرتب سازی بر اساس امتیاز</option>
-                                <option value="op1">مرتب سازی بر اساس جدیدترین</option>
-                                <option value="op1">مرتب سازی بر اساس ارزان ترین</option>
-                                <option value="op1">مرتب سازی بر اساس گران ترین</option>
+                                <option value="op1" selected="selected">مرتب سازی پیش‌فرض</option>
+                                <option value="op1">مرتب ساز محبوبیت</option>
+                                <option value="op1">مرتب سازی امتیاز</option>
+                                <option value="op1">مرتب سازی جدیدترین</option>
+                                <option value="op1">مرتب سازی ارزان ترین</option>
+                                <option value="op1">مرتب سازی گران ترین</option>
                             </select>
                             <select name="number" class="sl2">
                                 <option value="op1" selected="selected">نمایش 20</option>
@@ -629,6 +709,29 @@
                                 <option value="op1">نمایش 40</option>
                             </select>
                         </div>
+                    </div>
+                    <div class="allprds">
+                        <div class="prdct"></div>
+                        <div class="prdct"></div>
+                        <div class="prdct"></div>
+                        <div class="prdct"></div>
+                        <div class="prdct"></div>
+                        <div class="prdct"></div>
+                        <div class="prdct"></div>
+                        <div class="prdct"></div>
+                        <div class="prdct"></div>
+                        <div class="prdct"></div>
+                        <div class="prdct"></div>
+                        <div class="prdct"></div>
+                        <div class="prdct"></div>
+                        <div class="prdct"></div>
+                        <div class="prdct"></div>
+                        <div class="prdct"></div>
+                        <div class="prdct"></div>
+                        <div class="prdct"></div>
+                        <div class="prdct"></div>                        
+                        <div class="prdct"></div>                        
+
                     </div>
                 </div>
                 <div class="categories"></div>
